@@ -12,10 +12,10 @@ const app = (0, express_1.default)();
 const port = process.env.PORT || 8000;
 //Define the first route of app
 app.get('/', (req, res) => {
-    res.send('APP Express + ts + swagger + nodemon + jest+ mongoose');
+    res.status(200).json({ data: { message: 'Goodbye,world' } });
 });
 app.get('/hello', (req, res) => {
-    res.status(200).send({ data: { message: 'Goodbye,world' } });
+    res.status(200).json({ data: { message: `Hola,${req.query.name}` } });
 });
 app.listen(port, () => console.log(`EXPRES SERVER: Running at http://localhost:${port}`));
 //# sourceMappingURL=index.js.map
