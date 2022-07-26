@@ -4,7 +4,9 @@
  */
 import express, { Request, Response } from 'express'
 import HelloRouter from './HelloRouter'
+import GoodByeRouter from './GoodByeRouter'
 import { LogInfo } from '../utils/logger'
+import goodByeRouter from './GoodByeRouter'
 
 // Server instance
 
@@ -28,6 +30,7 @@ rootRouter.get('/', (req: Request, res: Response) => {
 
 server.use('/', rootRouter) // http://localhost:8000/api
 server.use('/hello', HelloRouter) //http://localhost:8000/api/hello --> HelloRouter
+server.use('/goodbye', GoodByeRouter) //htpp://localhost:8000/api/goodbye
 //Add more routes to the app
 
 export default server
