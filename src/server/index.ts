@@ -15,6 +15,8 @@ const server: Express = express()
 // Define SERVER to use "/api" and use rootRouter from 'index' in routes
 // From this point onover: http://localhost:8000/api/...
 server.use('/api', rootRouter)
+//Static server
+server.use(express.static('public'))
 
 //TODO Mongoose Connection
 
