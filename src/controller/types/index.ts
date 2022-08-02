@@ -2,7 +2,7 @@
  * 
 Basic Json response for Controllers
  */
-export type BasiscResponse = {
+export type BasicResponse = {
   message: string
 }
 /**

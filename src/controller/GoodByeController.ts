@@ -1,4 +1,4 @@
-import { BasiscResponse, goodByeResponse } from './types'
+import { BasicResponse, goodByeResponse } from './types'
 import { IGoodbyeController } from './interfaces'
 import { LogSuccess } from '../utils/logger'
 

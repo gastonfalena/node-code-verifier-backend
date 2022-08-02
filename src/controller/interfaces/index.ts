@@ -1,7 +1,7 @@
-import { BasiscResponse, goodByeResponse } from '../types'
+import { BasicResponse, goodByeResponse } from '../types'
 
 export interface IHelloController {
-  getMessage(name?: string): Promise<BasiscResponse>
+  getMessage(name?: string): Promise<BasicResponse>
 }
 
 export interface IGoodbyeController {
